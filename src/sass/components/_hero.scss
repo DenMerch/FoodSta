@@ -29,14 +29,22 @@
 
     @include tablet {
         display: block;
-        width: 336px;
+        width: 320px;
         height: 320px;
+        position: absolute;
+        top: 89px;
+        left: 368px;
 
     }
 
 }
 
+.hero__wraper {
+    position: relative;
+}
+
 .thumb {
+
     width: 320px;
     height: 320px;
     border: 14px solid var(--yelolow-main-color);
@@ -44,4 +52,31 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    position: relative;
+}
+
+.hero__btn {
+    width: 28px;
+    height: 34px;
+    position: absolute;
+    top: 50%;
+    z-index: 3;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 4px;
+    transform: translate(-50%, -50%);
+}
+
+.hero__btn--left {
+    left: 7px;
+}
+
+.hero__btn--right {
+    right: -21px;
+}
+
+.hero__icon {
+    width: 20px;
+    height: 11px;
+
 }
