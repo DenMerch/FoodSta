@@ -1,0 +1,47 @@
+.hero__title {
+    @include font(28px, 700, 1.18);
+    margin-bottom: 28px;
+
+    @include tablet {
+        width: 537px;
+        @include font(42px, 700, 1.2);
+
+    }
+}
+
+.hero__text {
+    width: 266px;
+    margin-bottom: 28px;
+
+    @include tablet {
+        width: 336px;
+    }
+}
+
+@include tablet {
+    .hero {
+        padding: 60px 0;
+    }
+}
+
+.hero__photo {
+    display: none;
+
+    @include tablet {
+        display: block;
+        width: 336px;
+        height: 320px;
+
+    }
+
+}
+
+.thumb {
+    width: 320px;
+    height: 320px;
+    border: 14px solid var(--yelolow-main-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
