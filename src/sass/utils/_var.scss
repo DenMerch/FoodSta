@@ -1,0 +1,50 @@
+:root {
+    --primary-font-family: 'Roboto', sans-serif;
+    --button-green-color: #BBF330;
+    --dark-green-color: #7EB101;
+    --yelolow-main-color: #FFE550;
+    --primari-text-color: #2C2C2C;
+    --accent-text-color: #BBF330;
+    
+    --white-color: #FEFEFE;
+    --two-green-color: #A7CE47;
+    --background-color: #FEFEFE;
+    --error-color: #FF705D;
+    --text-color: #3D3D3D;
+    --text_2-color: #969696;
+    --text_3-color: #4A4A4A;
+
+
+
+
+    --gradient-pink: linear-gradient(180deg, #FE88B3 0%, #FF4D8D 100%);
+    --gradient-pink_white: linear-gradient(180deg, #FDFDFD 0%, #FFF5F9 37.3%, #FE88B3 156.25%);
+    --shadow-fruit: radial-gradient(50% 50% at 50% 50%, #2F583F 0%, rgba(105, 105, 105, 0) 100%);
+
+
+}
+
+@mixin font ($fs, $fw, $lh) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+
+}
+
+@mixin phone {
+    @media screen and (min-width:480px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin desk {
+    @media screen and (min-width:1280px) {
+        @content;
+    }
+}
