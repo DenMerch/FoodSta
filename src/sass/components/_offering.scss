@@ -2,6 +2,14 @@
     padding: 50px 0;
     background: url('../images/mob-320-offering-background.svg');
     background-repeat: no-repeat;
+    background-size: cover;
+
+    @include phone {
+        background: url('../images/mob-480-offering-background.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
 }
 
 .offering__title {
@@ -11,6 +19,7 @@
 
 .offering__text {
     @include font(14px, 400, 1.14);
+    margin-bottom: 28px;
 }
 
 .offering__list {}
@@ -50,7 +59,6 @@
     position: absolute;
     top: 70%;
     left: 28%;
-    transform: translate(-50% -50%);
 }
 
 .apple-photo {
@@ -58,4 +66,47 @@
     bottom: 53px;
     left: 42px;
     z-index: 2;
+}
+
+.icon-wrap {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.delivery-icon,
+.oredr-icon {
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.offering__btn {
+    border: 2px solid var(--dark-green-color);
+    background-color: var(--background-color);
+    margin-right: 24px;
+}
+
+.offering__btn:hover,
+.offering__btn:focus {
+    border: 2px solid #597D00;
+}
+
+.offerin__link {
+    display: inline-block;
+}
+
+.offering__link--text {
+    margin-right: 4px;
+}
+
+.offering__icon {
+    width: 9px;
+    height: 9px;
 }
