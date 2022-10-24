@@ -94,6 +94,10 @@
         align-items: center;
 
     }
+
+    @include desk {
+        justify-content: space-between;
+    }
 }
 
 .navigation__list {
@@ -118,4 +122,8 @@
 
 .tab-container__link {
     margin-right: 191px;
+
+    @include desk {
+        margin-right: 735px;
+    }
 }

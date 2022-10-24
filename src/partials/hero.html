@@ -9,33 +9,31 @@
                 cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
             <button class="btn button hero__button" type="submit">Order Now</button>
             <div class="hero__photo">
-                <button class="btn hero__btn hero__btn--left" type="button"><svg
+                <button class="btn hero__btn hero__btn--left slick-prev" aria-label="Previous" type="button"><svg
                         class="icon hero__icon hero__icon--left">
                         <use href="./images/symbol-defs.svg#icon-left-scroll"></use>
                     </svg></button>
                 <div class="thumb">
-                    <div class="jquery">
+                    <picture>
+                        <source
+                            srcset="./images/hero/hero-one_1x_desk-min.png 1x, ./images/hero/hero-one_2x_desk-min.png 2x"
+                            media="(min-width: 1268px)" type="image/png" />
 
-                        <div class="singl-item">
-
-                            <picture>
-                                <source
-                                    srcset="./images/hero/hero-one_1x_tab-min.png 1x, ./images/hero/hero-one_2x_tab-min.png 2x"
-                                    media="(min-width: 768px)" type="image/png" />
-
-
-                                <img src=" ./images/hero/hero-one_1x_desk-min.png" alt="food-photo">
-                            </picture>
-                        </div>
-                    </div>
-
+                        <source
+                            srcset="./images/hero/hero-one_1x_tab-min.png 1x, ./images/hero/hero-one_2x_tab-min.png 2x"
+                            media="(min-width: 768px)" type="image/png" />
+                        <img src=" ./images/hero/hero-one_1x_desk-min.png" alt="food-photo">
+                    </picture>
                 </div>
-                <button class="btn hero__btn hero__btn--right" type="button"><svg
+
+                <button class="btn hero__btn hero__btn--right slick-next" aria-label="Next" type="button"><svg
                         class="icon hero__icon hero__icon--right">
                         <use href="./images/symbol-defs.svg#icon-right-scroll"></use>
                     </svg></button>
             </div>
+
         </div>
+    </div>
 
     </div>
 

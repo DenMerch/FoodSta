@@ -7,6 +7,10 @@
         @include font(42px, 700, 1.2);
 
     }
+
+    @include desk {
+        @include font (48px, 700, 1.2);
+    }
 }
 
 .hero__text {
@@ -24,6 +28,12 @@
     }
 }
 
+@include desk {
+    .hero {
+        padding: 0;
+    }
+}
+
 .hero__photo {
     display: none;
 
@@ -37,10 +47,21 @@
 
     }
 
+    @include desk {
+        width: 580px;
+        height: 580px;
+        top: -159px;
+        left: 670px;
+    }
+
 }
 
 .hero__wraper {
     position: relative;
+
+    @include desk {
+        top: 159px;
+    }
 }
 
 .thumb {
@@ -52,7 +73,13 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    position: relative;
+    // position: relative;
+
+    @include desk {
+        width: 580px;
+        height: 580px;
+        align-items: center;
+    }
 }
 
 .hero__btn {
